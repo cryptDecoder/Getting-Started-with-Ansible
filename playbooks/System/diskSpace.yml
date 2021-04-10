@@ -1,0 +1,14 @@
+---
+# This playbook is created for get the disk space of all servers
+- name: This playbook is developed for get all free space of servers
+  hosts: multi
+  #specify the task here
+  tasks:
+    - shell: df -h
+      register: ps
+
+    # Print the shell task's stdout.
+    - debug: msg={{ ps.stdout }}
+
+    # Print all contents of the shell task's output.
+    - debug: var=ps

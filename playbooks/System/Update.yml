@@ -1,0 +1,12 @@
+---
+# this playbook use for update the all packages
+
+- name: Update all packages
+  hosts: multi
+
+  tasks:
+    - name: install updates using yum
+      yum:
+        name: "*"
+        state: latest
+        update_cache: yes
