@@ -1,0 +1,11 @@
+---
+# this is my first ansible playbook for printing Hello world
+- name: Print Hello world
+  hosts: multi
+  connection: local
+
+  # Specify task here
+  tasks:
+    - name: Print debug Message
+      debug:
+        msg: Hello, World!
