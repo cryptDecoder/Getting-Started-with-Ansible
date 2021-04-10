@@ -16,3 +16,6 @@ Once Ansible is installed, make sure it’s working properly by entering ansible
 command line. You should see the currently-installed version:
 
 $ ansible --version
+
+## Ansible Workflow
+![ansible Workflow](assets/Ansible-Workflow.PNG)
