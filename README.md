@@ -19,3 +19,17 @@ $ ansible --version
 
 ## Ansible Workflow
 ![ansible Workflow](assets/Ansible-Workflow.PNG)
+## Terms	Explanation
+
+| Terms | Explanation |
+| :---: | :---: 
+| Ansible Server |	It is a machine where Ansible is installed and from which all tasks and playbooks will be executed. 
+| Modules |	The module is a command or set of similar commands which is executed on the client-side. 
+| Task	| A task is a section which consists of a single procedure to be completed.
+| Role | It is a way of organizing tasks and related files to be later called in a playbook.
+| Fact | The information fetched from the client system from the global variables with the gather facts operation.
+| Inventory | A file containing the data regarding the Ansible client-server.
+| Play | It is the execution of the playbook.
+| Handler | The task is called only if a notifier is present.
+| Notifier | The section attributed to a task which calls a handler if the output is changed.
+| Tag | It is a name set to a task that can be used later on to issue just that specific task or group of jobs.
